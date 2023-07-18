@@ -32,7 +32,6 @@
  COMMIT;
  SELECT COUNT(*) AS total_animals FROM animals;
  SELECT COUNT(*) AS never_escaped_animals FROM animals WHERE escape_attempts = 0;
- SELECT COUNT(*) AS never_escape_animals From animals WHERE escape_attempts = 0;
  SELECT AVG(weight_kg) AS average_weight_kg FROM animals;
  SELECT CASE WHEN neutered = 1 THEN 'Neutered' ELSE 'Not Neutered' END AS neutered_status, 
  SUM(escape_attempts) AS total_escape_attempts
