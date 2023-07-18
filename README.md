@@ -1,7 +1,7 @@
 # Vet clinic database
 <br>
 <div align='center'>
-	<h1> create animals table</h1>
+	<h1>query and update animals table</h1>
   </div>
 <a name="readme-top"></a>
 
@@ -20,9 +20,9 @@
 - [📝 License](#license)
 
 
-# 📖  create animals table! <a name="about-project"></a>
+# 📖  query and update animals table! <a name="about-project"></a>
 
-**create-animals-table** For this milestone, I use a relational database to create the initial data structure for a vet clinic and I create a table to store animals' information, insert some data into it, and query it.
+**query and update animals table** fOR THIS MILESTONE OF MY project, I use transactions to update and delete records. I also use MY knowledge of aggregate functions and GROUP BY to answer analytical questions.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>

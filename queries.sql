@@ -11,6 +11,7 @@
  SELECT * FROM animals WHERE  weight_kg BETWEEN 10.4 and 17.3;
 
  SELECT * FROM animals;
+ ALTER TABLE animals ADD COLUMN species VARCHAR(200);
  START TRANSACTION;
  UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
  UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
