@@ -12,3 +12,15 @@ INSERT INTO animals VALUES (8, 'Angemon', '2005-06-12', 1, true, -45, 'unspecifi
 INSERT INTO animals VALUES (9, 'Boarmon', '2005-06-07', 7, true, 24.4, 'unspecified');
 INSERT INTO animals VALUES (10, 'Blossom', '1998-10-13', 3, true, 17, 'unspecified');
 INSERT INTO animals VALUES (11, 'Ditto', '2022-05-14', 4, true, 22, 'unspecified');
+
+--INSERT DATA IN owners
+INSERT INTO owners VALUES (001, 'Sam Smith', 34);
+INSERT INTO owners VALUES (002, 'Jennifer Orwell', 19);
+INSERT INTO owners VALUES (003, 'Bob', 45);
+INSERT INTO owners VALUES (004, 'Melody Pond', 77);
+INSERT INTO owners VALUES (005, 'Dean Winchester', 14);
+INSERT INTO owners VALUES (006, 'Jodie Whittaker', 38);
+
+-- INSERT DATA IN species
+INSERT INTO species VALUES (20, 'Pokemon');
+INSERT INTO species VALUES (21, 'Digimon');

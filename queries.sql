@@ -49,3 +49,70 @@ SELECT
     AVG(escape_attempts) AS average_escape_attempts
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31';
+
+
+desc owners;
+desc species;
+desc animals;
+ALTER TABLE animals DROP PRIMARY KEY;
+desc animals;
+ALTER TABLE animals MODIFY COLUMN id INT AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE animals DROP COLUMN species;
+ALTER TABLE animals ADD COLUMN species_id INT;
+ALTER TABLE animals ADD COLUMN owner_id INT;
+ALTER TABLE animals ADD CONSTRAINT fk_species FOREIGN KEY (species_id) REFERENCES species(id);
+ALTER TABLE animals ADD CONSTRAINT fk_owner FOREIGN KEY (owner_id) REFERENCES owners(id);
+desc animals;
+desc owners;
+SELECT * FROM owners;
+desc species;
+SELECT* FROM species;
+
+UPDATE animals
+SET species_id = 
+    CASE
+        WHEN name LIKE '%mon' THEN 20
+        ELSE 21                          
+    END;
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE name = 'Agumon';
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE name IN ('Gabumon', 'Pikachu');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE name IN ('Devimon', 'Plantmon');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE name IN ('Angemon', 'Boarmon');
+
+SELECT * FROM animals;
+
+SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Melody Pond';
+
+SELECT animals.name FROM animals JOIN species ON animals.species_id = species.id WHERE species.name = 'Pokemon';
+
+SELECT owners.full_name, animals.name FROM owners LEFT JOIN animals ON owners.id = animals.owner_id;
+
+SELECT animals.name
+FROM animals
+JOIN species ON animals.species_id = species_id
+JOIN owners ON animals.owner_id = owners_id
+WHERE species.name = 'Digimon' AND owners.full_name = 'Jennifer Orwell';
+
+SELECT animals.name FROM animals
+JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Dean Winchester' AND animals.name NOT LIKE '%mon';
+
+SELECT species.name, COUNT(animals.id) AS animal_count FROM species
+LEFT JOIN animals ON species.id = animals.species_id
+GROUP BY species.name;
+

@@ -1,7 +1,7 @@
 # Vet clinic database
 <br>
 <div align='center'>
-	<h1>query and update animals table</h1>
+	<h1>query multiple tables</h1>
   </div>
 <a name="readme-top"></a>
 
@@ -20,9 +20,9 @@
 - [📝 License](#license)
 
 
-# 📖  query and update animals table! <a name="about-project"></a>
+# 📖  query multiple tables! <a name="about-project"></a>
 
-**query and update animals table** fOR THIS MILESTONE OF MY project, I use transactions to update and delete records. I also use MY knowledge of aggregate functions and GROUP BY to answer analytical questions.
+**query multiple tables** For this milestone of my project, I add some new tables and add foreign key columns to the existing animals table to model one-to-many relationships. Afterward, I use JOIN to query the data.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
