@@ -1,7 +1,7 @@
 # Vet clinic database
 <br>
 <div align='center'>
-	<h1>query multiple tables</h1>
+	<h1>add "join table" for visits</h1>
   </div>
 <a name="readme-top"></a>
 
@@ -20,9 +20,9 @@
 - [📝 License](#license)
 
 
-# 📖  query multiple tables! <a name="about-project"></a>
+# 📖  add "join table" for visits! <a name="about-project"></a>
 
-**query multiple tables** For this milestone of my project, I add some new tables and add foreign key columns to the existing animals table to model one-to-many relationships. Afterward, I use JOIN to query the data.
+**add "join table" for visits** For this milestone of my project, I  add some many-to-many relationships and write more complex queries I use them to answer questions.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
