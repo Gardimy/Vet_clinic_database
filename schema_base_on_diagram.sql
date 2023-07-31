@@ -44,13 +44,10 @@ CREATE TABLE visits (
     PRIMARY KEY (animal_id, vet_id, visit_date)
 );
 
-
--- Query for week2 day1 Databasr=e performence audit:
-ALTER TABLE owners ADD COLUMN email VARCHAR(120);
-
-CREATE INDEX ON animals (species_id);
-CREATE INDEX ON animals (owner_id);
-CREATE INDEX ON visits (animal_id);
-CREATE INDEX ON visits (vet_id);
-CREATE INDEX ON specializations (vet_id);
-CREATE INDEX ON specializations (species_id);
+-- Add indexes to foreign keys
+CREATE INDEX animals_species_id ON animals (species_id);
+CREATE INDEX animals_owner_id ON animals (owner_id);
+CREATE INDEX vet_specializations_vet_id ON vet_specializations (vet_id);
+CREATE INDEX vet_specializations_species_id ON vet_specializations (species_id);
+CREATE INDEX visits_animal_id ON visits (animal_id);
+CREATE INDEX visits_vet_id ON visits (vet_id);
