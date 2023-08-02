@@ -1,7 +1,7 @@
 # Vet clinic database
 <br>
 <div align='center'>
-	<h1>add "join table" for visits</h1>
+	<h1>Database performance audit</h1>
   </div>
 <a name="readme-top"></a>
 
@@ -20,9 +20,9 @@
 - [📝 License](#license)
 
 
-# 📖  add "join table" for visits! <a name="about-project"></a>
+# 📖   Database performance audit<a name="about-project"></a>
 
-**add "join table" for visits** For this milestone of my project, I  add some many-to-many relationships and write more complex queries I use them to answer questions.
+**Database performance audit** For this milestone of my project, I  add some many-to-many relationships and write more complex queries I use them to answer questions.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -36,9 +36,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Vet clinic database: query and update animals table
-- Vet clinic database: add 'join table' for visits
-- 
+- Add diagram based on the database schema
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,6 +105,17 @@ To run the project:
 - GitHub: [@Gardimy](https://github.com/Gardimy)
 - Twitter: [@gardyelontiga45](https://twitter.com/gardyelontiga45)
 - LinkedIn: [Gardimy charles](https://www.linkedin.com/in/gardimy-charles)
+
+👤 **Ali Bello Imoukhuede**
+
+- GitHub: [@githubhandle](https://github.com/devalibello)
+- Twitter: [@twitterhandle](https://twitter.com/i_am_aalee)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ali-bello-imoukhuede/)
+
+👤 **Daniel Ochuba**
+- GitHub: [@danielochuba](https://github.com/danielochuba)
+- Twitter: [@ochuba_daniel](https://twitter.com/ochuba_daniel)
+- LinkedIn: [Daniel Ochuba](https://www.linkedin.com/in/daniel-ochuba-ugochukwu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
